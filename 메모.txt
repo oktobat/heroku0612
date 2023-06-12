@@ -1,0 +1,11 @@
+airbnb = client 폴더 + server 폴더 
+airbnb > npm init -y (package.json 생성)
+airbnb > npm i express axios body-parser mysql cors
+airbnb > npm i -D concurrently
+airbnb > npm i -g nodemon
+airbnb 루트폴더 package.json에 아래 내용 추가
+"scripts": {
+    "client": "cd client && npm run start",
+    "server": "cd server && nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run client\" \"npm run server\""
+  },
