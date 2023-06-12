@@ -13,10 +13,10 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 const db = mysql.createConnection({
-    host:'localhost',
-    user:'root',
-    password:'1234',
-    database:'airbnb',
+   host:'co28d739i4m2sb7j.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+    user:'qi2ggl8he9krtrh9',
+    password:'rc815ouadhi2a71b',
+    database:'brtw9yrikmdwlhez',
     port:3306
 })
 db.connect()
